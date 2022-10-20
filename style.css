@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 320px;
+}
+
+div {
+    font-size: 500%;
+    display: inline;
+    margin: 30px;
+    cursor: pointer;
+}
+
+div:hover {
+    transform: rotateX('36deg');
+}
