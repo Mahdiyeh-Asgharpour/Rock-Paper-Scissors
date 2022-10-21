@@ -14,5 +14,14 @@ div {
 }
 
 div:hover {
-    transform: rotateX('36deg');
+    transform: rotatey('36deg');
+}
+
+#alert {
+    color: white;
+}
+
+#endgame {
+    color: red;
+    font-size: xx-large;
 }
