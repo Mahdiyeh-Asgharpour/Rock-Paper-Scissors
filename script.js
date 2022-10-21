@@ -2,7 +2,7 @@ while (true) {
     var player2 = (Math.random() * 3);
     var p1 = 0;
     var p2 = 0;
-    rock() {
+    function rock() {
         if ((number(player2)) <= 1) {
             player2 = 'rock';
 
@@ -19,7 +19,7 @@ while (true) {
 
 
     }
-    paper() {
+    function paper() {
         if ((number(player2)) <= 1) {
             player2 = 'rock';
             p1++;
@@ -36,7 +36,7 @@ while (true) {
 
 
     }
-    scissors() {
+    function scissors() {
         if ((number(player2)) <= 1) {
             player2 = 'rock';
             p2++;
