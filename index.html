@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
     <link type="text/css" rel="stylesheet" href="style.css">
-   
+
+
 </head>
 
 <body>
-    <div id="rock" onclick="rock()">✊</div>
-    <div id="paper" onclick="paper()">🖐️</div>
-    <div id="scissors" onclick="scissors()">✌️</div>
+
+    <div id="rock" onclick="gameLoop('rock')">✊</div>
+    <div id="paper" onclick="gameLoop('paper')">🖐️</div>
+    <div id="scissors" onclick="gameLoop('scissors')">✌️</div>
+    <h1 id="alert"></h1>
+    <h1 id="endgame"></h1>
+
     <script src="script.js"></script>
+
 
 
 
