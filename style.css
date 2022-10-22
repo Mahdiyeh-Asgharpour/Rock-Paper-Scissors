@@ -14,7 +14,9 @@ div {
 }
 
 div:hover {
-    transform: rotatey('36deg');
+     writing-mode: vertical-rl;
+    /* -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-45deg); */
 }
 
 #alert {
