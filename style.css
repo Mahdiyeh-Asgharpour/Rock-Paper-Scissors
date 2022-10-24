@@ -6,15 +6,15 @@ body {
     margin-top: 320px;
 }
 
-div {
+span {
     font-size: 500%;
     display: inline;
     margin: 30px;
     cursor: pointer;
 }
 
-div:hover {
-     writing-mode: vertical-rl;
+span:hover {
+    writing-mode: vertical-lr;
     /* -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-45deg); */
 }
@@ -26,4 +26,14 @@ div:hover {
 #endgame {
     color: red;
     font-size: xx-large;
+}
+
+#start {
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-style: italic;
+    display: inline-block;
+    border: none;
+    width: 80px;
+    height: 22px;
 }
