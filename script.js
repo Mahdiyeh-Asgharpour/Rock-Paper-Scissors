@@ -1,11 +1,16 @@
 let p1 = 0;
 let p2 = 0;
 
+function getNumberOfGame() {
+    var number = prompt('How many times do you want to play?');
+    Number = Number(number);
+}
+
 function getRobotPick() {
-    const randomNumber = Math.random() * 3;
-    if (randomNumber <= 1) {
+    const randomNumber = Math.random() * Number;
+    if (randomNumber <= (Number / 3)) {
         return "rock";
-    } else if (randomNumber <= 2) {
+    } else if (randomNumber <= ((2 * Number) / 3)) {
         return "paper";
     } else {
         return "scissors";
@@ -38,18 +43,21 @@ You: ${p1} Robot: ${p2}
 }
 
 function endGame() {
-    if (p1 == 3 || p2 == 3) {
-        if (p1 == 3 && p2 == 3) {
+    if (p1 == Number || p2 == Number) {
+        if (p1 == Number && p2 == Number) {
             document.getElementById('endgame').innerText = "Tie";
-        } else if (p1 == 3 && p2 != 3) {
+        } else if (p1 == Number && p2 != Number) {
             document.getElementById('endgame').innerText = "Win";
-        } else if (p2 == 3 && p1 != 3) {
+        } else if (p2 == Number && p1 != Number) {
             document.getElementById('endgame').innerText = "Lose";
         }
+
         p1 = 0;
         p2 = 0;
 
+
     }
+
 }
 
 function gameLoop(userPick) {
