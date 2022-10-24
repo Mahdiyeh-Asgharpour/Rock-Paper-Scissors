@@ -9,12 +9,20 @@
 </head>
 
 <body>
+    <div onclick="getNumberOfGame()">
+        <input id="start" type="button" value="start game">
+    </div>
+    <br>
 
-    <div id="rock" onclick="gameLoop('rock')">✊</div>
-    <div id="paper" onclick="gameLoop('paper')">🖐️</div>
-    <div id="scissors" onclick="gameLoop('scissors')">✌️</div>
-    <h1 id="alert"></h1>
-    <h1 id="endgame"></h1>
+    <div>
+        <span id="rock" onclick="gameLoop('rock')">✊</span>
+        <span id="paper" onclick="gameLoop('paper')">🖐️</span>
+        <span id="scissors" onclick="gameLoop('scissors')">✌️</span>
+    </div>
+    <div>
+        <h1 id="alert"></h1>
+        <h1 id="endgame"></h1>
+    </div>
 
     <script src="script.js"></script>
 
