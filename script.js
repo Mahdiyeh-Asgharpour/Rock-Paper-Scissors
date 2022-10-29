@@ -54,12 +54,14 @@ function endGame() {
 
         p1 = 0;
         p2 = 0;
-        const h1 = document.querySelector("h1");
-        const textnode = h1.nextSibling;
-        textnode.remove();
+        // const h1 = document.querySelector("h1");
+        // const textnode = h1.nextSibling;
+        // textnode.remove();
+        window.setTimeout(location.reload(), 10000);
 
 
     }
+
 
 }
 
