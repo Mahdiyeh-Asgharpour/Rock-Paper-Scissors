@@ -1,10 +1,8 @@
 let p1 = 0;
 let p2 = 0;
+var number = prompt('How many times do you want to play?');
+Number = Number(number);
 
-function getNumberOfGame() {
-    var number = prompt('How many times do you want to play?');
-    Number = Number(number);
-}
 
 function getRobotPick() {
     const randomNumber = Math.random() * Number;
